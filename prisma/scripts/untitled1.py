@@ -26,7 +26,6 @@ if __name__ == "__main__":
     stat_names = ["Loss", "Delay", "Theoretical Cost", "Avg Cost", "total cost"]
     stat_file_names = ["loss", "delay", "rew", "real_rew", "total_rew"]
     folder_path = "D:/NetSim_/NetSim/prisma/"
-
     kkk = 3
     """ 1 ==  sync step variation for ideal case 
         2 == signaling type comparaison for sync step 1s and 20% ratio 

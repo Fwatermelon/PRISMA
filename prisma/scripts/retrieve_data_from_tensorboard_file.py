@@ -304,7 +304,6 @@ if __name__ == "__main__":
 
     all_exps_df["ping frequency"].hist()
 
-
 # %%
 # for each of the variables : "ping frequency", "train load" and "moving average window", plot the proportion of having a "flag" = 1 or 0 in bar plots
 def plot_bar(df, column):
