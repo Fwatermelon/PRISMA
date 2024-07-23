@@ -4,6 +4,7 @@ We will vary the following  parameters:
     traffic matrix : [0, 1, 2, 3]
     sync step : [1, 2, 3, 4, 5, 6, 7, 8, 9]
 <<<<<<< HEAD
+<<<<<<< HEAD
     agent_type : ["dqn_model_sharing", "digital-twin", "dqn_value_sharing"]
     dqn model : ["original", "light", "lighter", "lighter_2", "lighter_3", "ff"]
     
@@ -48,6 +49,8 @@ import subprocess
 # static parameters
 traff_mats = list(range(0, 4))
 =======
+=======
+>>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
     signaling_type : ["NN", "digital-twin", "target"]
     dqn model : ["original", "light", "lighter", "lighter_2", "lighter_3", "ff"]
     
@@ -120,6 +123,9 @@ from time import sleep
 # static parameters
 <<<<<<< HEAD
 traff_mats = list(range(4, 10))
+<<<<<<< HEAD
+>>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
+=======
 >>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
 # traff_mats = [0, 1, 2, 3]
 # traff_mats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
@@ -128,6 +134,7 @@ traff_mats = list(range(4, 10))
 sync_steps = list(range(1, 10)) + list(range(10, 22, 5))
 # sync_steps = [1, 2, 4]
 sync_steps = list(range(1, 10, 2))
+<<<<<<< HEAD
 <<<<<<< HEAD
 sync_steps = [1, 5 , 10]
 sync_steps = [1]
@@ -160,6 +167,8 @@ experiment_name = f"{base_topo}_results"
 seed = 100
 rb_size = 15000
 =======
+=======
+>>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
 sync_steps = [1, 5, 7, 9]
 sync_steps = [1,]
 
@@ -187,6 +196,9 @@ experiment_name = "geant_results_with_threshold"
 
 seed = 100
 rb_size = 10000
+<<<<<<< HEAD
+>>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
+=======
 >>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
 dqn_models = ["", "_lite", "_lighter", "_lighter_2", "_lighter_3", "_ff"]
 dqn_models = ["", "_lite", "_lighter", "_lighter_2", "_lighter_3"]
@@ -194,6 +206,7 @@ dqn_models = []
 dqn_models = [""]
 nn_sizes = [35328, 9728, 5120, 1536, 512, 1024]
 nn_sizes = [35328, 9728, 5120, 1536, 512]
+<<<<<<< HEAD
 <<<<<<< HEAD
 nn_sizes = [
     35328,
@@ -234,6 +247,8 @@ thresholds =  [0.0,]
 test_only = True
 reset_exploration = 0
 =======
+=======
+>>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
 nn_sizes = [35328,]
 # variable parameters
 bs = 512
@@ -268,11 +283,15 @@ test_only = True
 rcpo_consider_loss=1
 reset_exploration = 0
 rcpo_use_loss_pkts=1
+<<<<<<< HEAD
+>>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
+=======
 >>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
 
 iii = 0
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 command_root = f"docker run --rm --gpus all -v /home/redha/prisma_chap4/prisma/:/app/prisma1/ -v /mnt/journal_paper_results/{base_topo}_itc/saved_models:/mnt/journal_paper_results/{base_topo}_itc/saved_models -w /app/prisma1 allicheredha/prismacopy:3.0"
 inc = 0
@@ -502,6 +521,8 @@ for traff_mat in traff_mats:
                                                 inc += 1
     print(iii)
 =======
+=======
+>>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
 command_root = f"docker run --rm --gpus all -v /mnt/backup_examples_new:/app/prisma/examples -v /mnt/journal_paper_results/{base_topo}_overlay/saved_models:/mnt/journal_paper_results/{base_topo}_overlay/saved_models -w /app/prisma allicheredha/prismacopy_episodes:offband_new"
 inc = 0
 
@@ -879,4 +900,7 @@ for traff_mat in traff_mats:
                                             inc +=1
     # print(inc)
 >>>>>>> 7ba840121a9f88c99c702aa70bc103e7c4769b00
+<<<<<<< HEAD
+>>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
+=======
 >>>>>>> c2ae11cb7d68ce93ba53590e9f9d0b2392fbf536
